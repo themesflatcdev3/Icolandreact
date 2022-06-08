@@ -903,7 +903,7 @@
 }
 
 .home-defi-1  {
-    background: url('./../../assets/images/background/bg-4.jpg') no-repeat;
+    // background: url('./../../assets/images/background/bg-4.jpg') no-repeat;
     background-size: cover;
     .features.style-4 {
         background: linear-gradient(180deg,  #060E11  70.35%,rgba(19, 25, 33, 0) 100%);
@@ -2248,7 +2248,7 @@
     width: 100%;
     height: 1080px;
 
-    background: url('./../../assets/images/background/bg-404.jpg') no-repeat;
+    // background: url('./../../assets/images/background/bg-404.jpg') no-repeat;
 
     @include flex(center,center);
 
@@ -2294,7 +2294,7 @@
 .comingsoon {
     width: 100%;
     height: 1080px;
-    background: url('./../../assets/images/background/bg-comingsoon.jpg') no-repeat;
+    // background: url('./../../assets/images/background/bg-comingsoon.jpg') no-repeat;
 
     @include flex(center,center);
     .main-comingsoon {
