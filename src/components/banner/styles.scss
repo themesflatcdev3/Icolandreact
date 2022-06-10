@@ -307,6 +307,7 @@
                 -webkit-text-stroke-width: 1px;
                 -webkit-text-stroke-color: #fff;
                 -webkit-text-fill-color: rgb(0 0 0/0%);
+                @include flex(center,flex-start);
             }
         }
         .desc {

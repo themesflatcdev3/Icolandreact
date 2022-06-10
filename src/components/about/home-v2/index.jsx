@@ -1,8 +1,8 @@
 import React , {useState} from 'react';
 import PropTypes from 'prop-types';
 import '../styles.scss'
-import AboutItem from '../about-item';
-import Button from '../../../components/button';
+import AboutItem from '../about-item2';
+
 
 About.propTypes = {
     data : PropTypes.array,
@@ -12,45 +12,41 @@ function About(props) {
 
     const {data} = props;
 
-    const [dataBlock] = useState(
+    const [dataTile] = useState(
         {
-            subtitle : 'About us',
-            title: 'What is cybox?',
-            desc : 'Maecenas sit pretium, cras in. In quisque sem id eget. In vel gravida ut adipiscing integer felis.'
+            title: 'What is ICO?',
+            desc : 'ICO Land is a generative NFT art collectible project of 10.000 unique, digitally hand-drawn avatars immortalized on the Ethereum blockchain.'
         }
     )
 
     return (
-        <section className="tf-section tf-about style2">
-            <div className="container">
-                <div className="row">
-                    <div className="col-md-12">
-                        <div className="content-about" data-aos="fade-up" data-aos-duration="800">
-                            <div className="tf-title">
-                                <p className="h8 sub-title">{dataBlock.subtitle}</p>
-                                <h4 className="title">{dataBlock.title}</h4>
+        <section className="about style-2">
+        <div className="container">
+            <div className="row">
+                <div className="col-12">
+                    <div className="about__content">
+                        <div className="row">
+                            <div className="col-xl-5 col-md-12">
+                                <div className="block-text">
+                                    <h3 className="title">{dataTile.title}</h3>
+                                    <p className="fs-20 mt-12">{dataTile.desc}</p>
+                                </div>
                             </div>
-                            <p className='pd20'>{dataBlock.desc}</p>
-                        </div>
-                    </div>
-                    <div className="col-md-12">
-                        <div className="wrap-about" data-aos="fade-up" data-aos-duration="800">
-                            {
-                                data.map(item => (
-                                    <AboutItem key={item.id} item={item} />
-                                ))
-                            }
-                        </div>
-                    </div>
-
-                    <div className="col-md-12">
-                        <div className="btn-about" data-aos="fade-up" data-aos-duration="800">
-                            <Button title='get Nfts' path='#' />
+                            <div className="col-xl-7 col-md-12">
+                                <div className="tf-box">
+                                    {
+                                        data.map(item => (
+                                            <AboutItem key={item.id} item={item} />
+                                        ))           
+                                    }
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
     );
 }
 

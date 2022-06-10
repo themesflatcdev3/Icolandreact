@@ -22,6 +22,9 @@
             padding-top: 89px;
     
         }
+        &.style-1 {
+            padding: 80px 0;
+        }
     }
     .features {
         padding: 80px 0 62px;
@@ -124,38 +127,36 @@
             border-radius: 110px;
 
             li {
+                border: none;
+                outline: none;
+                @include transition3;
                 border-radius: 110px;
                 padding: 16px 33px;
                 background: transparent;
                 cursor: pointer;
-                transition: 0.3s all ease-in-out;
+                font-family: "Inter", sans-serif;
+                font-weight: 600;
+                &.react-tabs__tab--selected {
+                    background: linear-gradient(294.72deg, $gradient-color2 9.05%, $gradient-color1 79.28%);
+                        h6 {
+                            color: rgba(255,255,255,1);
+
+                        }
+                }
                 h6 {
                     color: rgba(255,255,255,0.2);
-                }
-                &.active {
-                    background: linear-gradient(294.72deg, $gradient-color2 9.05%, $gradient-color1 79.28%);
-                    h6 {
-                        color: rgba(255,255,255,1);
-                    }
-                }
-                h6 {
                     margin-bottom: 0;
                 }
             }
         }
         .content-tab {
+            display: none;
             margin-top: 45px;
-            .content-inner {
-                @include flex (center, space-between);
-
+                // @include flex (center, space-between);
                 .list-progress {
                     max-width: 450px;
                     width: 100%;
                     padding-top: 35px;
-                    .progress {
-                        margin-bottom: 38px;
-                    }
-
                     &.right {
                         text-align: right;
                     }
@@ -165,7 +166,8 @@
                     }
                 }
                 .chart-bar {
-                    width: 240px;
+                    width: 250px;
+                    margin-top: -10px;
                 }
 
                 @include mobile {
@@ -179,12 +181,20 @@
                         padding: 30px 0 50px;
                     }
                 }
-            }
+                &.react-tabs__tab-panel--selected {
+                         @include flex (center, space-between);
+                }
+        }
+    }
+    .progressbar {
+        margin-bottom: 38px;
+        .progress {
+            height: 12px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
         }
     }
 }
-
-
 
 .token-details {
     padding: 80px 0 83px;

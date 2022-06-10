@@ -176,6 +176,9 @@ h6,
 .mt-12 {
     margin-top: 12px;
 }
+.pd28 {
+    padding: 0 28%;
+}
 .mt-16 {
     margin-top: 16px !important;
 }
@@ -412,6 +415,12 @@ h6,
     opacity: 0; 
 }
 body[data-magic-cursor="hide"] .mouse-cursor{display: none; opacity: 0; visibility: hidden; position: absolute; z-index: -1111; }
+
+@include tablet {
+    .pd28 {
+        padding: 0;
+    }
+}
 
 
 

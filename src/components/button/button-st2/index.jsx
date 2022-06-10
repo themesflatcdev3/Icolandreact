@@ -11,9 +11,9 @@ Button.propTypes = {
 };
 
 function Button(props) {
-    const {title , path , onClick} = props;
+    const {title , path , onClick,addclass} = props;
     return (
-        <Link className="btn-action-outline" to={path} onClick={onClick}>                                   
+        <Link className={`btn-action-outline ${addclass}`} to={path} onClick={onClick}>                                   
             <span>{title}</span>
         </Link>
     );

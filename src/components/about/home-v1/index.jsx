@@ -2,6 +2,7 @@ import React , {useState} from 'react';
 import PropTypes from 'prop-types';
 import AboutItem from '../about-item';
 import '../styles.scss'
+
 About.propTypes = {
     data : PropTypes.array,
 };

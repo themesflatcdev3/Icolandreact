@@ -7,6 +7,15 @@ function Footer(props) {
 
     const [isVisible, setIsVisible] = useState(false);
 
+    const [dataTitle] = useState(
+        {
+            title: "Don't miss out, Stay updated",
+            subtitle : 'Don’t hesitate to subscribe to latest news about ICo',
+            desc: 'Don’t hesitate to subscribe to latest news about ICo markets as well as crucial financial knowledge to become successful investors globally',
+            author:'Themesflat'
+        }
+    )
+
     const scrollToTop = () => {
       window.scrollTo({
         top: 0,
@@ -35,8 +44,8 @@ function Footer(props) {
                 <div className="row">
                     <div className="col-xl-7 col-md-12">
                         <div className="content-left">
-                            <h5 className="fs-22">Don't miss out, Stay updated</h5>
-                            <p>Don’t hesitate to subscribe to latest news about ICo</p>
+                            <h5 className="fs-22">{dataTitle.title}</h5>
+                            <p>{dataTitle.subtitle}</p>
 
                             <form action="#" id="subscribe-form">
                                 <input type="email" placeholder="Enter your email" required="" id="subscribe-email" />
@@ -46,7 +55,7 @@ function Footer(props) {
                     </div>
                     <div className="col-xl-5 col-md-12">
                         <div className="content-right">
-                            <p>Don’t hesitate to subscribe to latest news about ICo markets as well as crucial financial knowledge to become successful investors globally</p>
+                            <p>{dataTitle.desc}</p>
                             <ul className="list-social">
                                 <li><span className="icon-twitter"></span></li>
                                 <li><span className="icon-facebook"></span></li>
@@ -64,7 +73,7 @@ function Footer(props) {
             <div className="container">
                 <div className="row">
                     <div className="col-md-12">
-                        <p>© 2022. All rights reserved by <Link to="https://themeforest.net/user/themesflat/portfolio">Themesflat</Link></p>
+                        <p>© 2022. All rights reserved by <Link to="https://themeforest.net/user/themesflat/portfolio">{dataTitle.author}</Link></p>
                     </div>
                 </div>
             </div>

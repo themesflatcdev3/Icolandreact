@@ -45,7 +45,6 @@ const Header = () => {
                         <div className="header__right">
                         <nav id="main-nav" className={`main-nav ${menuActive ? 'active' : ''}`} >
                             <ul id="menu-primary-menu" className="menu">
-
                                 {
                                     menus.map((data,idx) => (
                                         <li key={idx} onClick={()=> handleDropdown(idx)} className={`menu-item ${data.namesub ? 'menu-item-has-children' : ''} ${activeIndex === idx ? 'active' : ''}`} 

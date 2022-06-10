@@ -1,124 +1,204 @@
 const menus = [
     {
         id: 1,
-        name: 'Home',
+        name: 'Home Page',
         links: '#',
         namesub: [
             {
                 id: 1,
-                sub: 'Home 01',
+                sub: 'Home Main',
                 links: '/'
             },
             {
                 id: 2,
-                sub: 'Home 02',
-                links: '/home-v2'
+                sub: 'Home NFT 01',
+                links: '/HomeNFT1'
             },
             {
                 id: 3,
-                sub: 'Home 03',
+                sub: 'Home NFT 02',
                 links: '/home-v3'
+            },
+            {
+                id: 4,
+                sub: 'Home Music',
+                links: '/home-v4'
+            },
+            {
+                id: 5,
+                sub: 'Home Defi 01',
+                links: '/home-v5'
+            },
+            {
+                id: 6,
+                sub: 'Home Defi 02',
+                links: '/home-v6'
+            },
+            {
+                id: 7,
+                sub: 'Home Defi 03',
+                links: '/home-v7'
+            },
+            {
+                id: 8,
+                sub: 'Home Defi 04',
+                links: '/home-v8'
             },
         ]
     },
     {
         id: 2,
-        name: 'About',
+        name: 'Home Dashboad',
         links: '#',
         namesub: [
             {
                 id: 1,
-                sub: 'About 01',
+                sub: 'Token Sales',
                 links: '/about-v1'
             },
             {
                 id: 2,
-                sub: 'About 02',
+                sub: 'Our Feature',
                 links: '/about-v2'
             },
             {
                 id: 3,
-                sub: 'Coming Soon',
+                sub: 'Road Map',
                 links: '/coming-soon'
             },
             {
                 id: 4,
-                sub: 'Community',
+                sub: 'Our Creations',
                 links: '/community'
             },
             {
                 id: 5,
-                sub: 'Team Details',
+                sub: 'Our Team',
                 links: '/team-details'
             },
             {
                 id: 6,
-                sub: 'FAQ',
+                sub: 'FaQs',
                 links: '/faq'
-            },
-            {
-                id: 7,
-                sub: '404',
-                links: '/404'
             },
 
         ]
     },
     {
         id: 3,
-        name: 'Road Map',
+        name: 'Blog Page',
         links: '#',
         namesub: [
             {
                 id: 1,
-                sub: 'Road Map 01',
+                sub: 'Blog Style 01',
                 links: '/road-map-v1'
             },
             {
                 id: 2,
-                sub: 'Road Map 02',
+                sub: 'Blog Style 02',
+                links: '/road-map-v2'
+            },
+            {
+                id: 3,
+                sub: 'Blog Style 03',
                 links: '/road-map-v2'
             },
         ]
     },
     {
         id: 4,
-        name: 'Nft',
+        name: 'Connect Wallet',
         links: '#',
-        namesub: [
-            {
-                id: 1,
-                sub: 'Nft Item',
-                links: '/nft-item'
-            },
-            {
-                id: 2,
-                sub: 'Nft Item Details',
-                links: '/nft-item-details'
-            },
-        ],
     },
     {
         id: 5,
-        name: 'Blog',
+        name: 'Elements',
         links: '#',
         namesub: [
             {
                 id: 1,
-                sub: 'Our Blog',
+                sub: 'About Us',
                 links: '/blog'
             },
             {
                 id: 2,
-                sub: 'Blog Details',
-                links: '/blog-details'
+                sub: 'Features',
+                links: '/blog'
+            },
+            {
+                id: 3,
+                sub: 'Road Map',
+                links: '/blog'
+            },
+            {
+                id: 4,
+                sub: 'Documents',
+                links: '/blog'
+            },
+            {
+                id: 5,
+                sub: 'Our Team',
+                links: '/blog'
+            },
+            {
+                id: 6,
+                sub: 'Partner',
+                links: '/blog'
+            },
+            {
+                id: 7,
+                sub: 'Token Sale',
+                links: '/blog'
+            },
+            {
+                id: 8,
+                sub: 'Button',
+                links: '/blog'
+            },
+            {
+                id: 9,
+                sub: 'Footer',
+                links: '/blog'
+            },
+            {
+                id: 10,
+                sub: 'Faq',
+                links: '/blog'
+            },
+            {
+                id: 11,
+                sub: 'Icon',
+                links: '/blog'
             },
         ],
     },
     {
         id: 6,
-        name: 'Contact',
-        links: '/contact'
+        name: 'Pages',
+        links: '#',
+        namesub: [
+            {
+                id: 1,
+                sub: 'Sign In',
+                links: '/road-map-v1'
+            },
+            {
+                id: 2,
+                sub: 'Sign Up',
+                links: '/road-map-v2'
+            },
+            {
+                id: 3,
+                sub: 'Page 404',
+                links: '/road-map-v2'
+            },
+            {
+                id: 4,
+                sub: 'Coming Soon',
+                links: '/road-map-v2'
+            },
+        ]
     },
     
 ]

@@ -1,6 +1,6 @@
 import {React , useEffect} from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Header from './components/header';
+// import Header from './components/header';
 // import Footer from './components/footer';
 import routes from './pages';
 import Page404 from './pages/404';
@@ -15,7 +15,7 @@ function App() {
   return (
     <>
 
-    <Header />
+    {/* <Header /> */}
 
     <Routes>
 

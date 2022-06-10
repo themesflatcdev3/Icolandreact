@@ -11,9 +11,9 @@ Button.propTypes = {
 };
 
 function Button(props) {
-    const {title , path , onClick} = props;
+    const {title , path , onClick, addclass} = props;
     return (
-        <Link className="btn-action" to={path} onClick={onClick}>                                   
+        <Link className={`btn-action ${addclass}`} to={path} onClick={onClick}>                                   
             <span className="effect">{title}</span>
         </Link>
     );
