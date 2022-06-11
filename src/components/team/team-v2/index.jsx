@@ -86,7 +86,7 @@ function Team() {
                 dataContent: [
                     {
                         img: img2,
-                        title: "Executive Team",
+                        title: "Executive Team2",
                         desc: "Our team player alway finds effective ways to improve the product and process",
                         name: "Charlee Mangar",
                         position: "Co-founder & COO",
@@ -241,15 +241,15 @@ function Team() {
                             dataPanel.map(data =>(
                                 <TabPanel className="content-tab" key={data.id}>
                                     {
-                                        data.dataContent.map (item=>(
-                                            <div className="content-inner" key={item.id}>
+                                        data.dataContent.map((item,index)=>(
+                                            <div className="content-inner" key={index}>
                                                 <div className="image">
                                                     <img src={item.img} alt="ICOLand" />
                                                 </div>
                                                 <div className="content">
                                                     <div className="block-text">
                                                         <h3 className="heading">{item.title}</h3>
-                                                        <p>{item.desc}</p>
+                                                        <p key={item}>{item.desc}</p>
                                                     </div>
                                                     <div className="info">
                                                             <span className="icon-union-01"></span>

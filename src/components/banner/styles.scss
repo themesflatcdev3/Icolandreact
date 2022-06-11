@@ -1090,7 +1090,6 @@
     .banner-top__main {
         margin-top: 120px;
         
-
         .buy-token-box {
             position: relative;
             z-index: 1;
@@ -1136,14 +1135,11 @@
                     transform: none !important;
                     background-position: center;
                     background-size: cover;
-                    width: 340px;
+                    min-width: 340px;
                     height: 400px;
                     @include flex(center,center);
-                   
-                    
-    
-                    &.swiper-slide-visible.swiper-slide-active {
-                        width: 380px;
+                    &.swiper-slide-duplicate.swiper-slide-duplicate-active {
+                        min-width: 380px;
                         height: 400px;
     
                         img {

@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 Roadmap.propTypes = {
     item: PropTypes.object,
 };
@@ -16,7 +15,7 @@ function Roadmap(props) {
             </div>
             <div className="box-roadmap__main">
                 <div className="text"><p>{item.desc}</p></div>
-                <Link to="#"><img src={item.img} alt="ICOLand" data-aos="fade-down" data-aos-duration="1000"/></Link>
+                <img src={item.img} alt="ICOLand" data-aos="fade-down" data-aos-duration="1000"/>
             </div>
         </div>
     );

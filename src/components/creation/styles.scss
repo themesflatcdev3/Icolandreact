@@ -68,7 +68,9 @@
     .box-nft__main {
         position: relative;
         overflow: hidden;
-        
+        a {
+            width: 100%;
+        }
         img {
             width: 100%;
             clip-path: polygon(

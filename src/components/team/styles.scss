@@ -1072,7 +1072,9 @@
         }
 
         @include desktop-1400 {
-            flex-wrap: wrap;
+            .react-tabs {
+                flex-wrap: wrap;
+            }
             .menu-tab {
                 width: 100%;
                 display: flex;

@@ -1099,20 +1099,49 @@
             }
         }
         .swiper-button-next, .swiper-button-prev {
+            @include transition3;
             top: auto;
             bottom: -115px;
             width: 60px;
+            border: 1px solid #40107a;
+            border-radius: 50%;
             height: 60px;
-
+            position: absolute;
+            opacity: 1;
+            z-index: 9;
+            @include flex(center,center);
             &::after {
                 display: none;
+            }
+            &::before {
+                color: #40107a;
+                position: absolute;
+                font-family: "Font Awesome 5 Pro";
+                font-weight: 100;
+                font-size: 30px;
+                display: block !important;
             }
         }
         .swiper-button-next {
             right: 44.7%;
+            &::before {
+                content: "\f356";
+            }
         }
         .swiper-button-prev {
             left: 44.7%;
+            &::before {
+                content: "\f355";
+            }
+        }
+        .swiper-button-next.swiper-button-disabled, 
+        .swiper-button-prev.swiper-button-disabled {
+            background: linear-gradient(153.06deg, #5C1594 -0.31%, #210A5C 99.69%);
+            z-index: 9;
+            &::before {
+                font-weight: bold;
+                color: $white;
+            }
         }
 
         @include desktop-1200 {

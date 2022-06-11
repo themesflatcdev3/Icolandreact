@@ -13,7 +13,6 @@ function About(props) {
     const [dataFaq] = useState(
         {
             title: 'Have any Question? ',
-            subtitle : 'Download the whitepaper and learn about ICO Token, the unique ICO Crypto approach and the team/advisors.',
         }
     )
 
@@ -44,22 +43,21 @@ function About(props) {
 
 
     return (
-        <section className="section-faq style-2">
+        <section className="section-faq style-1" id="faq">
         <div className="container">
             <div className="row">
-                <div className="col-xl-6 col-md-12">
-                    <div className="faq__content">
-                        <div className="block-text">
-                            <h3 className="heading">{dataFaq.title}</h3>
-                            <p>{dataFaq.subtitle}</p>
-                        </div>
-    
+                <div className="col-md-12">
+                    <div className="block-text center">
+                        <h2 className='heading'>{dataFaq.title}</h2>
+                    </div>
+
+                    <div className="section-faq__main" data-aos="fade-up" data-aos-duration="800">
                         <div className="flat-tabs">
                         <Tabs >
                         <TabList className="menu-tab">
                             {
                                 dataTab.map(data=> (
-                                    <Tab key={data.id} ><h6>{data.title}</h6></Tab>
+                                    <Tab key={data.id} ><h5>{data.title}</h5></Tab>
                                 ))
                             }
                         </TabList>
@@ -75,7 +73,7 @@ function About(props) {
                         <TabPanel className="content-tab">
                         <div className="content-inner flat-accordion">
                             {
-                                data.slice(4,8).map(item => (
+                                data.slice(0,4).map(item => (
                                     <AccordionItem key={item.id} item={item} />
                                 ))
                             }                                                   
@@ -84,7 +82,7 @@ function About(props) {
                         <TabPanel className="content-tab">
                         <div className="content-inner flat-accordion">
                             {
-                                data.slice(8,12).map(item => (
+                                data.slice(0,4).map(item => (
                                     <AccordionItem key={item.id} item={item} />
                                 ))
                             }                                                   
@@ -93,7 +91,7 @@ function About(props) {
                         <TabPanel className="content-tab">
                         <div className="content-inner flat-accordion">
                             {
-                                data.slice(12,16).map(item => (
+                                data.slice(0,4).map(item => (
                                     <AccordionItem key={item.id} item={item} />
                                 ))
                             }                                                   
@@ -102,7 +100,7 @@ function About(props) {
                         <TabPanel className="content-tab">
                         <div className="content-inner flat-accordion">
                             {
-                                data.slice(16,20).map(item => (
+                                data.slice(0,4).map(item => (
                                     <AccordionItem key={item.id} item={item} />
                                 ))
                             }                                                   
@@ -110,11 +108,6 @@ function About(props) {
                         </TabPanel>
                         </Tabs>
                         </div>
-                    </div>
-                </div>
-                <div className="col-xl-6 col-md-12">
-                    <div className="faq__images">
-                    <img src={require ('../../../assets/images/layout/imgfaq.png')} alt="" />
                     </div>
                 </div>
             </div>

@@ -11,7 +11,7 @@ function Documents(props) {
     const {data} = props;
     const [dataTitle] = useState(
         {
-            title: 'Documents',
+            title: 'Document    ',
             subtitle : 'Download the whitepaper and learn about ICO Token, the unique ICO Crypto approach and the team/advisors.',
         }
     )

@@ -17,7 +17,7 @@ const menus = [
             {
                 id: 3,
                 sub: 'Home NFT 02',
-                links: '/home-v3'
+                links: '/HomeNFT2'
             },
             {
                 id: 4,

@@ -60,7 +60,7 @@ function Banner (props) {
         <div className="banner-top style-1">
             <div className="container">
                 <div className="row">
-                    <div className="col-xl-6 col-md-12">
+                    <div className="col-xl-6 col-md-12" data-aos="zoom-in" data-aos-duration="800">
                         <div className="banner-top__content">
                             <div className="sale-top">
                                 <Link to="#">{dataBanner.sale}</Link>
@@ -74,7 +74,7 @@ function Banner (props) {
                             </div>
                         </div>
                     </div>
-                    <div className="col-xl-6 col-md-12">
+                    <div className="col-xl-6 col-md-12" data-aos="fade-up" data-aos-duration="800">
                         <div className="banner-top__sale">
                             <div className="sale-content">
                                 <h3>Token sale End In</h3>

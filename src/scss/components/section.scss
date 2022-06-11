@@ -1492,27 +1492,6 @@
 }
 
 .home-nft-v2 {
-    // .header .header__right .main-nav .menu li {
-    //     .sub-menu {
-    //         li {
-    //             &:hover {
-    //                 a {
-    //                     color: var(--primary-color);
-    //                 }
-    //             }
-
-    //             &.current-item > a {
-    //                 color: var(--primary-color);
-    //             }
-    //         }
-    //     }
-    // }
-    .section-partner {
- 
-        background: #F6F6F6;
-
-    }
-
     .features.style-6 {
         padding: 123px 0 101px;
         background: #fff;
@@ -1618,7 +1597,7 @@
                         font-size: 22px;
                         margin-bottom: 0;
                     }
-                    &.active {
+                    &.react-tabs__tab--selected {
                         h5 {
                             color: #13316B;
 
@@ -1627,44 +1606,6 @@
                         &::after {
                             bottom: -7px;
                             background: #5C1594;
-                        }
-                    }
-                }
-            }
-        }
-        .flat-tabs .content-tab {
-            margin-top: 32px;
-            .flat-toggle {
-                border: 2px solid #5C1594;
-                backdrop-filter: blur(54px);
-
-                border-radius: 10px;
-                position: relative;
-                margin-bottom: 67px;
-                padding: 24px 28px 22px 37px;
-                margin-bottom: 19px;
-
-                .toggle-title {
-                    color: #181818;
-
-                    &::after {
-                        color: #A09FAF;
-                    }
-                }
-                .toggle-content {
-                    font-size: 15px;
-                    padding-right: 55px;
-                    color: #FFF;
-                }
-    
-                &.active {
-                    background: #5C1594;
-                    .toggle-title {
-                        color: #fff;
-                        
-    
-                        &::after {
-                            color: #fff;
                         }
                     }
                 }
@@ -2376,4 +2317,44 @@
         }
     }
      
+}
+
+h3,h5 {
+    text-transform: capitalize;
+}
+.features .block-text {
+    p {
+        margin-top: 11px;
+    }
+}
+
+
+.creation .block-text {
+    .title {
+        font-family: 'Zen Dots';
+        font-weight: 400;
+    }
+    p {
+        font-size: 17px;
+        margin-top: 13px;
+    }
+}
+
+.document .block-text {
+    p {
+
+        margin-top: 12px;
+    }
+}
+
+.section-faq .block-text {
+    
+    p {
+        margin-top: 12px;
+    }
+}
+
+.react-tabs__tab {
+    border: none !important;
+    outline: none !important; 
 }
