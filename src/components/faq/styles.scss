@@ -353,14 +353,23 @@
 
         
     }
-    .flat-toggle {
+    .accordion-item {
+        &:first-child {
+            margin-bottom: 42px;
+            padding-bottom: 33px;
+        }
+        background: transparent;
         padding: 0 61px;
-        margin-bottom: 42px;
+        position: relative;
+        margin-bottom: 41px;
         cursor: pointer;
-        padding-bottom: 36px;
+        padding-bottom: 41px;
         border-bottom: 1px solid #373D41;
-        
-        .toggle-title {
+        .accordion-body {
+            padding: 0
+        }
+        .accordion-button {
+            background: transparent;
             @include flex(center,flex-start);
             margin-bottom: 0;
             position: relative;
@@ -369,19 +378,53 @@
             color: #fff;
             font-weight: 400;
             text-transform: none;
-            
-
-            span {
-                font-size: 36px;
-                color: #A09FAF;
-                margin-right: 52px;
+            padding: 0;
+            border: none;
+            box-shadow: none;
+            padding-left: 90px;
+            &::after {
+                @include transition3;
+                background: #1F2332;
+                font-family: 'icomoon';
+                font-size: 16px;
+                min-width: 40px;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-image: none;
+                transition: 0.3s all ease-in-out;
+                @include flex(center,center);
+                transform: rotate(0);
+                content: "\e954";
+                color: #fff;
             }
-
-            span.icon {
-                margin-right: 0;
+            &.collapsed {
+                &::after {
+                    content: "\e955";
+                    background: #fff;
+                    color: #000;
+                }
             }
         }
 
+        span {
+            font-family: 'Russo One';
+            font-size: 36px;
+            color: #A09FAF;
+            margin-right: 52px;
+            z-index: 9;
+        }
+
+        .number {
+            position: absolute;
+            left: 60px;
+            top: 3px;
+            line-height: 1;
+        }
+
+        span.icon {
+            margin-right: 0;
+        }
         .icon {
             min-width: 40px;
             width: 40px;
@@ -403,7 +446,7 @@
             }
         }
         .toggle-content {
-            margin-top: -5px;
+            margin-top: -3px;
             padding-left: 90px;
             font-size: 20px;
             margin-bottom: 0;
@@ -508,7 +551,7 @@
                         margin-right: 0;
                     }
     
-                    &.active {
+                    &.react-tabs__tab--selected {
                         h5 {
                             color: #fff;
                         }
@@ -527,20 +570,63 @@
             }
     
             .content-tab {
-                margin-top: 59px;
-    
-                .flat-toggle {
-                    margin-bottom: 47px;
-                    cursor: pointer;
-                    padding-bottom: 33px;
-                    border-bottom: 1px solid #373D41;
-                    
-                    .toggle-title {
+                margin-top: 52px;
+                display: none;
+                &.react-tabs__tab-panel--selected {
+                    display: block;
+                }
+                .accordion-item {
+                    &:last-child {
                         margin-bottom: 0;
-                        position: relative;
-                        color: #fff;
-                        font-size: 24px;
+                        border-bottom: 0;
+                        padding-bottom: 0;
                     }
+                    margin-bottom: 39px;
+                    cursor: pointer;
+                    padding-bottom: 31px;
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    border-bottom: 1px solid #373D41;
+                    background: transparent;
+                    .accordion-header {
+                        .accordion-button {
+                            text-transform: capitalize;
+                            background: transparent;
+                            padding: 0;
+                            margin-bottom: 0;
+                            position: relative;
+                            color: #fff;
+                            font-size: 24px;
+                            font-family: "Inter", sans-serif;
+                            font-weight: 600;
+                            line-height: 1.2;
+                            box-shadow: none;
+                            border: none;
+                            &::after {
+                                @include transition3;
+                                background: rgba(180, 225, 22, 0.8);
+                                font-family: 'icomoon';
+                                font-size: 16px;
+                                min-width: 40px;
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 50%;
+                                background-image: none;
+                                transition: 0.3s all ease-in-out;
+                                @include flex(center,center);
+                                transform: rotate(0);
+                                content: "\e954";
+                                color: #000;
+                            }
+                            &.collapsed {
+                                &::after {
+                                    content: "\e955";
+                                }
+                            }
+                        }
+                    }
+                   
             
                     .icon {
                         min-width: 40px;
@@ -562,35 +648,30 @@
                             transition: 0.3s all ease-in-out;
                         }
                     }
+                    .accordion-body {
+                        padding: 0;
+                        // padding-top: 15px;
+                    }
                     .toggle-content {
+
                         font-size: 17px;
                         margin-bottom: 0;
                         color: #A09FAF;
-                        padding-top: 3px;
                         padding-right: 50px;
                     }
-                    &.active {
-                        .toggle-title {
-            
-                            &::after {
-                                color: var(--primary-color);
-                                transform: rotate(-180deg);
-                            }
+        
+                    .icon {    
+                
+                        &::before {
+                            content: "\e954";
                         }
-            
-                        .icon {    
+                    }
                     
-                            &::before {
-                                content: "\e954";
-                            }
-                        }
-                        
-                    }
-                    &:last-child {
-                        margin-bottom: 0;
-                        border: none;
-                        padding-bottom: 0;
-                    }
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                    border: none;
+                    padding-bottom: 0;
                 }
             }
         }
@@ -825,7 +906,7 @@
                             color: $white;
                         }
                         &.collapsed {
-                            padding: 24px 28px 22px 37px;
+                            padding: 24px 28px 25px 37px;
                             color: #181818;
                             &::before {
                                 background: transparent;
@@ -867,6 +948,9 @@
                             }
                         }
                     }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
                 }
                 .collapse-w4itxd {
                     &::before {
@@ -879,5 +963,107 @@
             }
         }
 
+    }
+}
+
+.home-defi-2 {
+    .section-faq.style-2 {
+        background: transparent;
+        padding: 95px 0 106px;
+        .container {
+            max-width: 1485px;
+        }
+        .block-text {
+            .sub-heading {
+                color: #48D6D2;
+                font-weight: 700;
+                font-size: 14px;
+                letter-spacing: 2px;
+            }
+            .heading {
+                font-family: 'Inter';
+                font-weight: 600;
+                color: #13316B;
+            }
+        }
+        .faq__content {
+            padding-right: 0;
+            .flat-tabs {
+                margin-top: 44px;
+                .menu-tab li {
+                    color: #A09FAF;
+                    opacity: 1;
+                    border-radius: 4px;
+                    padding: 8px 15px;
+                    margin-right: 23px;
+                    &::after {
+                        display: none;
+                    }
+                    
+                    h6 {
+                        color: #A09FAF;
+                        font-family: 'Inter';
+                        font-weight: 600;
+                        font-size: 22px;
+                        margin-bottom: 0;
+                    }
+                    &.react-tabs__tab--selected {
+                        background: rgba(46, 114, 210, 0.1);
+                        h6 {
+                            color: #13316B;
+                        }
+                    }
+                }
+            }
+        }
+        .flat-tabs .content-tab {
+            margin-top: 42px;
+            .accordion-item {
+                background: transparent !important;
+                padding: 0;
+                border: none;
+                border-radius: 0;
+                position: relative;
+                margin-bottom: 67px;
+
+                &::before {
+                    @include absolute;
+                    width: 100%;
+                    height: 2px;
+                    background: #E5E5E5;
+                    top: auto;
+                    bottom: -33px;
+                }
+                .accordion-header {
+                    .accordion-button {
+                        color: #181818;
+                        font-family: 'Inter';
+                        font-weight: 600;
+                        font-size: 24px;
+    
+                        &::after {
+                            color: #181818;
+                        }
+                        &.collapsed {
+                            color: #181818;
+                            padding-right: 50px;
+                            &::after {
+                                color: #A09FAF;
+                            }
+                        }
+                    }
+                }
+
+                .toggle-content {
+                    font-size: 15px;
+                    color: #636770;
+                    padding-right: 55px;
+                }
+    
+                .accordion-body {
+                    padding-top: 13px;
+                }
+            }
+        }
     }
 }

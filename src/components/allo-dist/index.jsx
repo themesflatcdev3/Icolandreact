@@ -16,28 +16,29 @@ const Allodist = () => {
             subtitle : 'Join the industry leaders to discuss where the markets are heading. We accept token payments.',
         }
     )
-
+    const options = { plugins: { legend: false }}
     const data = {
-            datasets: [{
-            data: [25, 25, 10, 10, 10, 20],
-            backgroundColor: [
-                '#3D88FB',
-                '#5637C8',
-                '#00D199',
-                '#C87B07',
-                '#A92535',
-                '#9116CD',
-            ]   
-        }],
-        // labels: [
-        //     'Marketing',
-        //     'Bussiness Development',
-        //     'Product Development',
-        //     'Reserve',
-        //     'Reserve',
-        //     'Token Sale'
-        // ],
-    };
+      datasets: [{
+      data: [40, 30, 10, 10, 10],
+      backgroundColor: [
+          '#32B6EA',
+          '#1CA151',
+          '#DEAD2F',
+          '#A00763',
+          '#343EBF',
+      ],
+      type: 'doughnut',  
+  }],
+  labels: [
+      'Marketing',
+      'Bussiness Development',
+      'Product Development',
+      'Reserve',
+      'Reserve',
+      'Token Sale'
+      
+  ],
+};
     const [dataTab] = useState(
         [
             {
@@ -105,8 +106,7 @@ const Allodist = () => {
                                 </div>
                             </div>
                             <div className="chart-bar">
-                                <Pie data={data}>
-                                </Pie>
+                            <Pie data={data} options={options}></Pie>
                             </div>
                             <div className="list-progress right">
                                 <div className="progressbar">
@@ -175,8 +175,7 @@ const Allodist = () => {
                                 </div>
                             </div>
                             <div className="chart-bar">
-                                <Pie data={data}>
-                                </Pie>
+                            <Chart options={data.options} series={data.series} type="donut" width="250" height="250" />
                             </div>
                             <div className="list-progress right">
                                 <div className="progressbar">

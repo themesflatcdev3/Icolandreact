@@ -134,15 +134,17 @@ function Banner (props) {
                                     className='swiper banner-nft'
                                     modules={[ Autoplay ]}
                                     spaceBetween={20}
+                                    coverflowEffect ={
+                                       {
+                                        stretch: 0,
+                                        depth: 100,
+                                        modifier: 1,
+                                        slideShadows: true,
+                                       }
+                                      }
                                     breakpoints={{
-                                        0: {
-                                            slidesPerView: 2,
-                                            },
-                                        767: {
-                                            slidesPerView: 3,
-                                        },
                                         991: {
-                                            slidesPerView: 5,
+                                            slidesPerView: 4,
                                         },
                                     }}
                                     loop

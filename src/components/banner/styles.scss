@@ -442,23 +442,6 @@
                     }
                 }
             }
-            // .desc {
-            //     display: flex;
-            //     justify-content: center;
-            //     margin-top: 12px;
-            //     li {
-            //         font-size: 16px;
-            //         font-weight: 700;
-            //         text-transform: uppercase;
-            //         margin: 0 20px;
-            //         &:nth-child(2) {
-            //             padding-left: 27px;
-            //         }
-            //         &:nth-child(3) {
-            //             padding-left: 27px;
-            //         }
-            //     }
-            // }
         }
 
         @include desktop-1200 {
@@ -511,6 +494,8 @@
             line-height: 1.29;
             text-transform: uppercase;
             letter-spacing: 1.8px;
+            display: flex;
+            flex-direction: column;
 
             span {
                 -webkit-text-stroke-width: 2px;
@@ -1191,10 +1176,7 @@
                 padding: 15px 39px;
    
                 display: inline-block;
-                margin-right: 10px;
-                svg {
-                    margin-left: 9px;
-                }
+                margin-right: 15px;
             }
         }
         .content-list {

@@ -478,7 +478,8 @@
         li {
             position: absolute;
             display: flex;
-    
+            border: none;
+            outline: none;
             @include tablet {
                 position: unset;
             }
@@ -563,7 +564,7 @@
                     bottom: -18px;
                 }
             }
-            &.active {
+            &.react-tabs__tab--selected {
                 .team-box__image {
                     width: 92px;
                     min-width: 92px;
@@ -599,8 +600,11 @@
         backdrop-filter: blur(12px);
         height: 220px;
         width: 330px;
-
-
+        display: none;
+        @include transition3;
+        &.react-tabs__tab-panel--selected {
+            display: block;
+        }
         &:nth-child(1) {
             top: 316px;
             right: 6px;

@@ -30,6 +30,37 @@ const dataTokendetails = [
         title: 'Acceptable curencies',
         desc: 'ETH, BTC, LTC',
     },
+
+    {
+        id: 7,
+        title: 'Public Sale Starts',
+        desc: '28 JAN 2022 12:00 GMT',
+    },
+    {
+        id: 8,
+        title: 'Publlic Sale Ends',
+        desc: '14TH FEB 2022 12:00 GMT',
+    },
+    {
+        id: 9,
+        title: 'Total Token Sale',
+        desc: '1,550,000',
+    },
+    {
+        id: 10,
+        title: 'Token Exchange Rate',
+        desc: '1 BTC = 1558 CLO',
+    },
+    {
+        id: 11,
+        title: 'Token Allocated',
+        desc: '880,000',
+    },
+    {
+        id: 12,
+        title: 'Acceptable Currency',
+        desc: 'BTC, ETH, LTC',
+    },
 ]
 
 export default dataTokendetails;

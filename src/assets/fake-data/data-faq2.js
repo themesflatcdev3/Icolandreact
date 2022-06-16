@@ -5,7 +5,7 @@ const dataFaq = [
         content: 'We try to keep returns and exchanges as simple as possible. As long as they meet our criteria, it should be no problem at all to return or exchange them.',
     },
     {
-        show: 'show',
+        show: 'How Can I Participate In The ICO Token Sale?',
         id: 2,
         title: 'What is Shopi. return/exchange policy?',
         content: 'We try to keep returns and exchanges as simple as possible. As long as they meet our criteria, it should be no problem at all to return or exchange them.',
@@ -22,7 +22,7 @@ const dataFaq = [
     },
     {
         id: 5,
-        title: 'How can',
+        title: 'How Can I Participate In The ICO Token Sale?',
         show: 'show',
         content: 'We try to keep returns and exchanges as simple as possible. As long as they meet our criteria, it should be no problem at all to return or exchange them.',
     },
@@ -43,13 +43,13 @@ const dataFaq = [
     },
     {
         id: 9,
-        title: 'How ',
+        title: 'How Can I Participate In The ICO Token Sale? ',
         show: 'show',
         content: 'We try to keep returns and exchanges as simple as possible. As long as they meet our criteria, it should be no problem at all to return or exchange them.',
     },
     {
         id: 10,
-        title: 'What',
+        title: 'What Is ICO Crypto?',
         content: 'We try to keep returns and exchanges as simple as possible. As long as they meet our criteria, it should be no problem at all to return or exchange them.',
     },
     {
@@ -59,18 +59,18 @@ const dataFaq = [
     },
     {
         id: 12,
-        title: 'How can I track my order??',
+        title: 'How can I track my order?',
         content: 'We try to keep returns and exchanges as simple as possible. As long as they meet our criteria, it should be no problem at all to return or exchange them.',
     },
     {
         id: 13,
-        title: 'How ',
+        title: 'How Do I Benefit From The ICO Token? ',
         show: 'show',
         content: 'We try to keep returns and exchanges as simple as possible. As long as they meet our criteria, it should be no problem at all to return or exchange them.',
     },
     {
         id: 14,
-        title: 'What',
+        title: 'What Cryptocurrencies Can I Use To Purchase?',
         content: 'We try to keep returns and exchanges as simple as possible. As long as they meet our criteria, it should be no problem at all to return or exchange them.',
     },
     {
@@ -85,24 +85,24 @@ const dataFaq = [
     },
     {
         id: 17,
-        title: 'How ',
+        title: 'What Is ICO Crypto?',
         show: 'show',
-        content: 'We try to keep returns and exchanges as simple as possible. As long as they meet our criteria, it should be no problem at all to return or exchange them.',
+        content: 'Once ICO period is launched, You can purchased Token with Etherum, Bitcoin or Litecoin. You can also tempor incididunt ut labore et dolore magna aliqua sed do eiusmod eaque ipsa.',
     },
     {
         id: 18,
-        title: 'What',
-        content: 'We try to keep returns and exchanges as simple as possible. As long as they meet our criteria, it should be no problem at all to return or exchange them.',
+        title: 'What Cryptocurrencies Can I Use To Purchase?',
+        content: 'Once ICO period is launched, You can purchased Token with Etherum, Bitcoin or Litecoin. You can also tempor incididunt ut labore et dolore magna aliqua sed do eiusmod eaque ipsa.',
     },
     {
         id: 19,
-        title: '19',
-        content: 'We try to keep returns and exchanges as simple as possible. As long as they meet our criteria, it should be no problem at all to return or exchange them.',
+        title: 'How Can I Participate In The ICO Token Sale?',
+        content: 'Once ICO period is launched, You can purchased Token with Etherum, Bitcoin or Litecoin. You can also tempor incididunt ut labore et dolore magna aliqua sed do eiusmod eaque ipsa.',
     },
     {
         id: 20,
-        title: '20',
-        content: 'We try to keep returns and exchanges as simple as possible. As long as they meet our criteria, it should be no problem at all to return or exchange them.',
+        title: 'How Do I Benefit From The ICO Token?',
+        content: 'Once ICO period is launched, You can purchased Token with Etherum, Bitcoin or Litecoin. You can also tempor incididunt ut labore et dolore magna aliqua sed do eiusmod eaque ipsa.',
     },
 ]
 

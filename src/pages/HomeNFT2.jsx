@@ -3,12 +3,12 @@ import '../scss/components/_icon-box.scss';
 import '../scss/components/section.scss';
 import '../scss/components/_progress.scss';
 import '../scss/components/form.scss';
-import Footer from '../components/footer/footer-v1';
+import Footer from '../components/footer/footer-v3';
 import Header from '../components/header/header-v2';
 import Banner from '../components/banner/banner-v3';
 import dataBanner from '../assets/fake-data/databannerswiper';
-import Parner from '../components/partner/parter-v1';
-import dataParner from '../assets/fake-data/data-parter';
+import Parner from '../components/partner/parner-v1';
+import dataParner from '../assets/fake-data/data-partner';
 import About from '../components/about/home-v3';
 import dataAbout from '../assets/fake-data/data-about3';
 import Feature from '../components/features/features-v2';
@@ -21,7 +21,7 @@ import Team from '../components/team/team-v3';
 import dataTeam from '../assets/fake-data/data-team2';
 import Faq from '../components/faq/faq-v3';
 import dataaccordion from '../assets/fake-data/data-faq';
-function HomeOne(props) {
+function HomeNft2(props) {
 
     return (
         <div className='home-nft-v2'>
@@ -39,4 +39,4 @@ function HomeOne(props) {
     );
 }
 
-export default HomeOne;
+export default HomeNft2;

@@ -26,7 +26,7 @@ import Footer from '../components/footer/footer-v2';
 function HomeOne(props) {
 
     return (
-        <div className='home-main'>
+        <div className='home-main backgroup-body'>
             {<Header />}
             {<Banner />}
             {<About data={dataAbout} />}

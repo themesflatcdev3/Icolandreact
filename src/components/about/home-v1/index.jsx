@@ -34,7 +34,7 @@ function About(props) {
 
                         <div className="list-icon-box" data-aos="fade-up" data-aos-duration="800">
                         {
-                            data.map(item => (
+                            data.slice(0,3).map(item => (
                                 <AboutItem key={item.id} item={item} />
                             ))           
                         }

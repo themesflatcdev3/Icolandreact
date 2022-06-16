@@ -10,7 +10,8 @@ function Feature(props) {
     const {data} = props;
     const [dataTile] = useState(
         {
-            title: 'FEATURES & APPLICATIONS',
+            subtitle: 'Our features',
+            title: 'How Can I Benefit?',
         }
     )
 
@@ -19,8 +20,11 @@ function Feature(props) {
         <div className="container">
             <div className="row">
                 <div className="col-xl-7 col-md-12">
-                    <div className="block-text">
-                        <h2 className="heading">{dataTile.title}</h2>
+                    <div className="block-text center">
+                    <h6 className="sub-heading">{dataTile.subtitle}</h6>
+                        <h3 className="heading">
+                        {dataTile.title}
+                        </h3>
                     </div>
                     <div className="features__content">
                         {

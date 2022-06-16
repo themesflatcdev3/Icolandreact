@@ -19,10 +19,10 @@ import Team from '../components/team/team-v2';
 import Faq from '../components/faq/faq-v2';
 import dataaccordion from '../assets/fake-data/data-faq2';
 import Contact from '../components/contact/contact-v2';
-function HomeOne(props) {
+function HomeNft(props) {
 
     return (
-        <div className='home-nft'>
+        <div className='home-nft backgroup-body'>
             {<Header />}
             {<Banner data={dataBanner}/>}
             {<About data={dataAbout}/>}
@@ -37,4 +37,4 @@ function HomeOne(props) {
     );
 }
 
-export default HomeOne;
+export default HomeNft;

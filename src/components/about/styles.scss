@@ -188,13 +188,13 @@
         margin-right: -30px;
         position: relative;
 
-        &::before {
-            @include absolute;
-            width: 100%;
-            height: 100%;
-            background: rgba(19,49,107,0.4);
-            border-radius: 8px;
-        }
+        // &::before {
+        //     @include absolute;
+        //     width: 100%;
+        //     height: 100%;
+        //     background: rgba(19,49,107,0.4);
+        //     border-radius: 8px;
+        // }
         img {
             border-radius: 8px;
             @include tablet {
@@ -528,4 +528,9 @@
             padding-left: 0;
         }
     }
+}
+
+.home-defi-3 .about.style-7 {
+    background: transparent;
+    padding: 102px 0 50px;
 }

@@ -27,22 +27,22 @@ const menus = [
             {
                 id: 5,
                 sub: 'Home Defi 01',
-                links: '/home-v5'
+                links: '/homedefi01'
             },
             {
                 id: 6,
                 sub: 'Home Defi 02',
-                links: '/home-v6'
+                links: '/homedefi02'
             },
             {
                 id: 7,
                 sub: 'Home Defi 03',
-                links: '/home-v7'
+                links: '/homedefi03'
             },
             {
                 id: 8,
                 sub: 'Home Defi 04',
-                links: '/home-v8'
+                links: '/homedefi04'
             },
         ]
     },

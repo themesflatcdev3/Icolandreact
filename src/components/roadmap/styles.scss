@@ -783,7 +783,7 @@
                 margin-top: 18px;
                 li {
                     @include flex(center,flex-start);
-                    margin-bottom: -2px;
+                    margin-bottom: -1px;
                     .dot {
                         width: 5px;
                         height: 5px;
@@ -880,7 +880,7 @@
         .box-roadmap {
             min-width: 50%;
             position: relative;
-            svg {
+            img {
                 position: absolute;
                 right: 0;
                 top: 71px;
@@ -1102,10 +1102,10 @@
             @include transition3;
             top: auto;
             bottom: -115px;
-            width: 60px;
+            width: 56px;
             border: 1px solid #40107a;
             border-radius: 50%;
-            height: 60px;
+            height: 56px;
             position: absolute;
             opacity: 1;
             z-index: 9;
@@ -1123,13 +1123,13 @@
             }
         }
         .swiper-button-next {
-            right: 44.7%;
+            right: 44.5%;
             &::before {
                 content: "\f356";
             }
         }
         .swiper-button-prev {
-            left: 44.7%;
+            left: 44.5%;
             &::before {
                 content: "\f355";
             }
@@ -1215,8 +1215,11 @@
 
 .road-map.style-7  {
     overflow: hidden;
-    padding: 80px 0 119px;
-
+    padding: 80px 0 60px;
+    .swiper-roadmap-7 {
+        padding-left: 149px;
+        padding-bottom: 54px;
+    }
     .block-text {
         .heading {
             color: #B4E116;
@@ -1232,7 +1235,6 @@
     }
     .road-map__main {
         margin-top: 96px;
-        padding-left: 149px;
         position: relative;
         display: flex;
 
@@ -1323,7 +1325,7 @@
         }
 
         .swiper-pagination {
-            bottom: -54px;
+            bottom: 0;
             .swiper-pagination-bullet {
                 width: 20px;
                 height: 6px;
@@ -1580,6 +1582,22 @@
 
         .swiper-slide-active  .box-roadmap , .swiper-slide-next .box-roadmap{
             background: rgba(194, 72, 214, 0.1);
+        }
+    }
+}
+
+@include desktop-1200 {
+    .road-map.style-3 .road-map__main {
+        padding: 85px 0 0 !important;
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: auto;
+        .box-roadmap {
+            min-width: 300px;
+        }
+        &::before,
+        &::after {
+            top: 22px;
         }
     }
 }

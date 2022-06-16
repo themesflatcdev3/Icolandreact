@@ -900,7 +900,7 @@
     }
 
     .section-faq.style-3 {
-        padding: 121px 0 138px;
+        padding: 121px 0 142px;
         background: transparent;
     }
 
@@ -913,14 +913,14 @@
 }
 
 .home-defi-1  {
-    // background: url('./../../assets/images/background/bg-4.jpg') no-repeat;
+    background: url('./../../assets/images/background/bg-4.jpg') no-repeat;
     background-size: cover;
     .features.style-4 {
         background: linear-gradient(180deg,  #060E11  70.35%,rgba(19, 25, 33, 0) 100%);
     }
 
     .road-map.style-4 {
-        padding: 23px 0 43px;
+        padding: 18px 0 38px;  
         background: transparent;
         position: relative;
         img.s1 {
@@ -950,7 +950,7 @@
     .section-faq.style-1 {
         background: transparent;
 
-       .section-faq__main .flat-tabs .content-tab .flat-toggle {
+       .section-faq__main .flat-tabs .react-tabs .content-tab .accordion-item {
             background: rgba(46, 114, 210, 0.1);
             border: 1px solid #2E72D2;
 
@@ -990,9 +990,10 @@
 
             .chart-bar {
                 margin-top: 48px;
-                canvas {
-                    width: 280px;
-                }
+                width: 280px;
+                height: 280px;
+                margin-left: auto;
+                margin-right: auto;
             }
             .bottom-chart {
                 margin-top: 39px;
@@ -1078,7 +1079,7 @@
         padding: 62px 0;
     }
 
-    .section-partner {
+    .section-partner.style-1 {
         background: transparent;
     }
     .blog {
@@ -1199,13 +1200,12 @@
 
     }
     .section-faq.style-1 {
-        padding: 61px 0 79px;
+        padding: 61px 0 82px;
     }
 }
 
 .home-defi-2 {
-    background: #fff;
-
+    // background: #fff;
     .block-text {
         p {
             color: #F6F6F6;
@@ -1274,7 +1274,10 @@
             .chart-bar {
                 margin-top: 88px;
                 canvas {
-                    width: 289px;
+                    max-height: 289px;
+                    max-width: 289px;
+                    margin-left: auto;
+                    margin-right: auto;
                 }
             }
         }
@@ -1287,101 +1290,7 @@
 
     }
 
-    .section-faq.style-2 {
-        background: transparent;
-        padding: 95px 0 106px;
-        .container {
-            max-width: 1485px;
-        }
-        .block-text {
-            .sub-heading {
-                color: #48D6D2;
-                font-weight: 700;
-                font-size: 14px;
-                letter-spacing: 2px;
-            }
-            .heading {
-                font-family: 'Inter';
-                font-weight: 600;
-                color: #13316B;
-            }
-        }
-        .faq__content {
-            padding-right: 0;
-            .flat-tabs {
-                margin-top: 42px;
-                .menu-tab li {
-                    color: #A09FAF;
-                    opacity: 1;
-                    border-radius: 4px;
-                    padding: 8px 15px;
-                    margin-right: 23px;
-                    &::after {
-                        display: none;
-                    }
-                    
-                    h6 {
-                        color: #A09FAF;
-                        font-family: 'Inter';
-                        font-weight: 600;
-                        font-size: 22px;
-                        margin-bottom: 0;
-                    }
-                    &.active {
-                        background: rgba(46, 114, 210, 0.1);
-                        h6 {
-                            color: #13316B;
-                        }
-                    }
-                }
-            }
-        }
-        .flat-tabs .content-tab {
-            margin-top: 42px;
-            .flat-toggle {
-                background: transparent !important;
-                padding: 0;
-                
-                border-radius: 0;
-                position: relative;
-                margin-bottom: 67px;
 
-                &::before {
-                    @include absolute;
-                    width: 100%;
-                    height: 2px;
-                    background: #E5E5E5;
-                    top: auto;
-                    bottom: -33px;
-                }
-                .toggle-title {
-                    color: #181818;
-                    font-family: 'Inter';
-                    font-weight: 600;
-                    font-size: 24px;
-
-                    &::after {
-                        color: #A09FAF;
-                    }
-                }
-                .toggle-content {
-                    font-size: 15px;
-                    color: #636770;
-                    padding-right: 55px;
-                }
-    
-                &.active {
-                    .toggle-title {
-                        color: #181818;
-    
-                        &::after {
-                            color: #181818;
-                        }
-                    }
-                }
-            }
-        }
-    }
 
     .blog {
         background: #13316B;
@@ -1488,6 +1397,8 @@
     }
     .footer.style-5 .info p {
         color: #fff;
+        line-height: 1.6;
+        padding-right: 62%;
     }
 }
 
@@ -1651,7 +1562,7 @@
         }
     }
     .section-token {
-        padding: 107px 0 38px;
+        padding: 53px 0 38px;
 
         .block-text {
             margin-bottom: 60px;
@@ -1745,7 +1656,7 @@
 
             .text {
                 padding-right: 50px;
-                margin-top: 16px;
+                margin-top: 9px;
                 margin-bottom: 13px;
             }
 
@@ -1778,7 +1689,7 @@
         padding: 39px 0 104px;
 
         .faq__main {
-            padding: 82px 0 95px;
+            padding: 82px 0 90px;
             background: #181818;
 
             @include desktop-1200 {
@@ -2357,4 +2268,51 @@ h3,h5 {
 .react-tabs__tab {
     border: none !important;
     outline: none !important; 
+}
+
+.swiper {
+    &:hover {
+        cursor: ew-resize;
+    }
+}
+
+
+@include tablet {
+    .home-music .token.style-3 .token__content .list {
+        flex-wrap: wrap;
+        margin-left: -30px;
+        li {
+            width: calc(25% - 30px);
+            margin-left: 30px;
+        }
+    }
+}
+
+@include mobile {
+    .home-music {
+        .token.style-3 {
+            .token__content {
+                .top .number {
+                    font-size: 45px;
+                }
+                .list {
+                    li {
+                        width: calc(100% - 30px);
+                        margin-bottom: 30px;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.apexcharts-legend {
+    display: none !important;
+}
+
+.apexcharts-canvas {
+    max-width: 250px !important;
 }

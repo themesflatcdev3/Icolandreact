@@ -293,6 +293,21 @@
             width: 100%;
         }
     }
+    &.icon {
+        span {
+            position: relative;
+            padding-right: 36px;
+            &::after {
+                position: absolute;
+                content: "\f178";
+                font-family: "Font Awesome 5 Pro";
+                right: 0;
+                font-size: 22px;
+                font-weight: 400;
+                @include topcenter;
+            }
+        }
+    }
 
     &:hover {
         color: #181818;

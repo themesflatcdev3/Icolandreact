@@ -29,7 +29,7 @@ function Team(props) {
             </div>
             <div className="row mt-24">
             {
-                data.map(item => (
+                data.slice(0,4).map(item => (
                     <Teamitem key={item.id} item={item} />
                 ))           
             }

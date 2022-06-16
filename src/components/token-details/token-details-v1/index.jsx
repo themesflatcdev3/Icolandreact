@@ -33,7 +33,7 @@ function Tokendetails(props) {
                     <div className="infomation" data-aos="fade-up" data-aos-duration="800">
                         <ul className="info-list">
                             {
-                                data.map(item => (
+                                data.slice(0,6).map(item => (
                                     <Tokenitem key={item.id} item={item} />
                                 ))           
                             }
