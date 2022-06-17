@@ -78,7 +78,7 @@ function Banner (props) {
 
                         <ul className="content-list">
                         {
-                            data.map(item => (
+                            data.slice(0,3).map(item => (
                                 <Banneritem key={item.id} item={item} />
                             ))           
                         }

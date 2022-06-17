@@ -46,7 +46,7 @@ function Tokendetails(props) {
     )
 
     return (
-        <section className="section-token style-7" id="token">
+        <section className="section-token style-7 mobie-pb0" id="token">
         <div className="container-fluid">
             <div className="row">
                 <div className="col-md-12">

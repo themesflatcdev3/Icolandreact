@@ -17,7 +17,7 @@ function About(props) {
     )
 
     return (
-        <section className="blog" id="blog">
+        <section className="blog mobie-pb0" id="blog">
         <div className="container">
             <div className="row">
                 <div className="col-md-12">

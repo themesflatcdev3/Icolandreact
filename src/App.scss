@@ -322,6 +322,12 @@ h6,
         padding: 0;
     }
 }
+.pd24 {
+    padding: 0 24%;
+}
+.pd25 {
+    padding: 0 25%;
+}
 .pb-team {
     padding: 0 150px;
     margin-top: 38px;
@@ -430,6 +436,8 @@ h6,
 body[data-magic-cursor="hide"] .mouse-cursor{display: none; opacity: 0; visibility: hidden; position: absolute; z-index: -1111; }
 
 @include tablet {
+    .pd25,
+    .pd24,
     .pr40,
     .pd22,
     .pd28 {

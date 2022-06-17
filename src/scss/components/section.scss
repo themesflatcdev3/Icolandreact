@@ -676,7 +676,6 @@
         .gallery__box {
             position: relative;
             margin-bottom: 30px;
-
             &::before {
                 @include absolute;
                 width: 100%;
@@ -1792,7 +1791,7 @@
     }
     .section-team.style-7 {
         background: #051745;
-        padding: 80px 0 124px;
+        padding: 80px 0 70px;
     }
 
     .blog {
@@ -1970,7 +1969,7 @@
                             font-family: 'Inter';
                             color: #A09FAF;
                         }
-                        &.active {
+                        &.react-tabs__tab--selected {
                             h5 {
                                 color: #fff;
                             }
@@ -1982,39 +1981,75 @@
                         }
                     }
                 }
-            }
-
+                
             .content-tab {
                 margin-top: 35px;
-                .flat-toggle{
+                .accordion-item{
+                    position: relative;
                     background: transparent;
-                    border: 1px solid #636770;
-                    border-radius: 12px;
-                    padding: 21px 19px;
+                    padding: 22px 20px 22px;
                     margin-bottom: 24px;
-                    
-                    .toggle-title {
-                        color: #fff;
-                        font-family: 'Inter';
-                        font-weight: 600;
-                        &.active {
+                    overflow: hidden;
+                    border: none;
+                    .accordion-header {
+                        position: initial;
+                        .accordion-button {
+                            @include transition3;
+                            padding-top: 13px;
+                            position: initial;
                             color: #fff;
-
+                            font-family: 'Inter';
+                            font-weight: 600;
+                            text-transform: capitalize;
+                            font-size: 22px;
                             &::after {
+                                top: 45px;
+                                right: 17px;
+                                font-weight: 300;
+                            }
+                            &.active {
                                 color: #fff;
+    
+                                &::after {
+                                    color: #fff;
+                                }
+                            }
+                            &::before {
+                                z-index: 0;
+                                @include transition3;
+                                width: 100%;
+                                height: 100%;
+                                position: absolute;
+                                background: rgba(72, 214, 210, 0.1);
+                                border: 1px solid #48D6D2;
+                                border-radius: 12px;
+                                left: 0;
+                                top: 0;
+                                content: "";
+                            }
+                            &.collapsed {
+                                padding-top: 0;
+                                &::before {
+                                    background: transparent;
+                                    border: 1px solid #636770;
+                                }
                             }
                         }
+
                     }
-                    &.active {
-                        background: rgba(72, 214, 210, 0.1);
-                        border: 1px solid #48D6D2;
-                        padding: 33px 19px;
+                    .accordion-body {
+                        padding-top: 20px;
                     }
                     .toggle-content {
-                        margin-top: 17px;
+                        font-size: 17px;
+                        margin-top: 0;
+                        font-weight: 400;
+                        text-transform: none;
                     }
                 }
             }
+            }
+
         }
         .faq__images {
             text-align: left;
@@ -2050,6 +2085,27 @@
             color: #13316B;
             border-radius: 12px;
             margin-top: 16px;
+            &:hover {
+                &::after {
+                    left: -30%;
+                    opacity: 1;
+                    top: -20%;
+                    transition-duration: 0.7s, 0.7s, 0.15s;
+                    transition-property: left, top, opacity;
+                    transition-timing-function: linear;
+                }
+            }
+            &::after {
+                background: linear-gradient(90deg, rgba(255, 255, 255, 0.13) 0px, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0));
+                content: "";
+                height: 200%;
+                left: -210%;
+                opacity: 0;
+                position: absolute;
+                top: -50%;
+                transition: all 0.7s ease 0s;
+                width: 200%;
+            }
         }
     }
 }
@@ -2315,4 +2371,50 @@ h3,h5 {
 
 .apexcharts-canvas {
     max-width: 250px !important;
+}
+@include mobile {
+    .home-music {
+        .join-now.style-3 .join-now__main p {
+            padding: 0;
+        }
+        .blog .blog-box {
+            margin-bottom: 30px;
+        }
+    }
+    .about.style-3 {
+        .popup-youtube {
+            width: 100% !important;
+            height: 500px !important;
+        }
+    }
+    section {
+        padding: 70px 0 !important;
+        &.mobie-pb0 {
+            padding-bottom: 0 !important;
+        }
+        &.banner-top {
+            padding: 180px 0 70px !important;
+        }
+        &.dashboard {
+            padding: 0 !important;
+        }
+    }
+}
+
+@include mobileapp {
+    .banner-top.style-3 .banner-top__content .desc {
+        padding: 0;
+    }
+    .about.style-3 {
+        .popup-youtube {
+            width: 100% !important;
+            height: auto !important;
+        }
+    }
+}
+
+@include mobile {
+    .home-music .gallery .gallery__box {
+        overflow: hidden;
+    }
 }

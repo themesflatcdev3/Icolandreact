@@ -18,7 +18,7 @@ function Feature(props) {
     )
 
     return (
-        <section className="road-map style-7" id="roadmap">
+        <section className="road-map style-7 mobie-pb0" id="roadmap">
             <div className="container">
                 <div className="row">
                     <div className="col-md-12">

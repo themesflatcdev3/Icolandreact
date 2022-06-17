@@ -127,6 +127,95 @@ const dataRoadmap = [
             },
         ]
     },
+
+    {
+        id: 11,
+        classAction:'active',
+        time: 'April 15, 2019',
+        title: 'Concept',
+        list: [
+            {
+                id: 1,
+                text: 'Concept Generation',
+            },
+            {
+                id: 2,
+                text: 'Team Assemble',
+            },
+        ]
+    },
+    {
+        id: 12,
+        classAction:'active',
+        time: 'April 20, 2019',
+        title: 'Research',
+        list: [
+            {
+                id: 1,
+                text: 'Proving the concept can work',
+            },
+            {
+                id: 2,
+                text: 'White paper conpletion',
+            },
+        ]
+    },
+    {
+        id: 13,
+        time: 'April 15, 2019',
+        title: 'Design',
+        list: [
+            {
+                id: 1,
+                text: 'Platform design',
+            },
+            {
+                id: 2,
+                text: 'Building the MVP',
+            },
+        ]
+    },
+    {
+        id: 14,
+        time: 'July 01, 2019',
+        title: 'Pre-sale',
+        list: [
+            {
+                id: 1,
+                text: 'Public financing & Seed funding raised',
+            },
+        ]
+    },
+    {
+        id: 15,
+        time: 'April 15, 2019',
+        title: 'Concept',
+        list: [
+            {
+                id: 1,
+                text: 'Concept Generation',
+            },
+            {
+                id: 2,
+                text: 'Team Assemble',
+            },
+        ]
+    },
+    {
+        id: 16,
+        time: 'April 20, 2019',
+        title: 'Research',
+        list: [
+            {
+                id: 1,
+                text: 'Proving the concept can work',
+            },
+            {
+                id: 2,
+                text: 'White paper conpletion',
+            },
+        ]
+    },
 ]
 
 export default dataRoadmap;

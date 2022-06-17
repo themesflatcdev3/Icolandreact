@@ -70,7 +70,7 @@ function Allodist(props) {
 
 
     return (
-        <section className="section-token" id="token">
+        <section className="section-token mobie-pb0" id="token">
             <div className="container">
                 <div className="row">
                     <div className="col-md-12">

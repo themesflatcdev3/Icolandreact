@@ -7,6 +7,12 @@ import HomeDefi1 from "./HomeDefi01";
 import HomeDefi2 from "./HomeDefi02";
 import HomeDefi3 from "./HomeDefi03";
 import HomeDefi4 from "./HomeDefi04";
+import DashboardTokensales from "./Dashboard-Tokensales";
+import DashboardFeatures from "./Dashboard-Features";
+import DashboardRoadmap from "./Dashboard-Roadmap";
+import DashboardCreations from "./Dashboard-Creations";
+import DashboardTeam from "./Dashboard-Team";
+import DashboardFaq from "./Dashboard-Faq";
 
 const routes = [
   
@@ -18,6 +24,13 @@ const routes = [
   { path: '/homedefi02', component: <HomeDefi2 />},
   { path: '/homedefi03', component: <HomeDefi3 />},
   { path: '/homedefi04', component: <HomeDefi4 />},
+  { path: '/dashboard-tokensales', component: <DashboardTokensales/>},
+  { path: '/dashboard-features', component: <DashboardFeatures/>},
+  { path: '/dashboard-roadmap', component: <DashboardRoadmap/>},
+  { path: '/dashboard-creations', component: <DashboardCreations/>},
+  { path: '/dashboard-team', component: <DashboardTeam/>},
+  { path: '/dashboard-faq', component: <DashboardFaq/>},
+  
   { path: '/404', component: <Page404 />},
 
 ]

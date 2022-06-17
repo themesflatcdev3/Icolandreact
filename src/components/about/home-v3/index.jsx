@@ -45,12 +45,7 @@ function About(props) {
                             },
                         }}
                         loop
-                        autoplay={{
-                                delay: 1,
-                                disableOnInteraction: false,
-                                pauseOnMouseEnter: true,
-                            }}
-                            speed= {2000}
+                        autoplay
                          >
                         {
                             data.slice(0,5).map(item => (

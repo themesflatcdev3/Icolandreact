@@ -40,50 +40,50 @@ function Footer(props) {
     }, []);
 
     return (
-        <footer class="footer style-7">
-        <div class="footer__top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-8 col-md-12">
-                        <div class="content-left">
+        <footer className="footer style-7">
+        <div className="footer__top">
+            <div className="container">
+                <div className="row">
+                    <div className="col-xl-8 col-md-12">
+                        <div className="content-left">
                             <h5 >{dataTitle.title}</h5>
-                            <p class="fs-17">{dataTitle.desc}</p>
+                            <p className="fs-17">{dataTitle.desc}</p>
 
                             <form action="#" id="subscribe-form">
                                 <h6>{dataTitle.title2}</h6>
                                 <input type="email" placeholder="Enter your email address" required="" id="subscribe-email" />
-                                <button class="btn-action style-5" type="submit" id="subscribe-button"> <span>SIGN UP</span></button>
+                                <button className="btn-action style-5" type="submit" id="subscribe-button"> <span>SIGN UP</span></button>
                             </form>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-md-12">
-                        <div class="content-right">
+                    <div className="col-xl-4 col-md-12">
+                        <div className="content-right">
                             <h5>Contact</h5>
-                            <ul class="list-info">
-                                <li> <span class="icon-internet"></span>Company.com</li>
-                                <li> <span class="icon-message"></span>Info.yourcompany@gmail.com</li>
-                                <li><span class="icon-Calling"></span>+345 54689435</li>
+                            <ul className="list-info">
+                                <li> <span className="icon-internet"></span>Company.com</li>
+                                <li> <span className="icon-message"></span>Info.yourcompany@gmail.com</li>
+                                <li><span className="icon-Calling"></span>+345 54689435</li>
                             </ul>
-                            <ul class="list-social">
-                                <li><span class="icon-twitter"></span></li>
-                                <li><span class="icon-facebook"></span></li>
-                                <li><span class="icon-place"></span></li>
-                                <li><span class="icon-youtobe"></span></li>
-                                <li><span class="icon-tiktok"></span></li>
-                                <li><span class="icon-reddit"></span></li>
+                            <ul className="list-social">
+                                <li><span className="icon-twitter"></span></li>
+                                <li><span className="icon-facebook"></span></li>
+                                <li><span className="icon-place"></span></li>
+                                <li><span className="icon-youtobe"></span></li>
+                                <li><span className="icon-tiktok"></span></li>
+                                <li><span className="icon-reddit"></span></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer__bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
+        <div className="footer__bottom">
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-6">
                         <img src={require ('../../../assets/images/logo/logo04.png')} alt="ICOLand" />
                     </div>
-                    <div class="col-md-6">
+                    <div className="col-md-6">
                         <p>{dataTitle.copyright}</p>
                     </div>
                 </div>

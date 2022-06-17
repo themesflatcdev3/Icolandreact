@@ -534,3 +534,27 @@
     background: transparent;
     padding: 102px 0 50px;
 }
+
+@include mobile {
+    .about.about.style-6 .block-text {
+        padding-top: 0;
+    }
+    .about.style-5 .about__video {
+        padding-right: 0;
+        .popup-youtube {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+}
+
+@include tablet {
+    .about.about.style-6 {
+        .block-text {
+            padding: 100px 0;
+        }
+        .about__content {
+            display: none;
+        }
+    }
+}

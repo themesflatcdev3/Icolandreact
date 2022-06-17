@@ -142,16 +142,27 @@ function Banner (props) {
                                         slideShadows: true,
                                        }
                                       }
-                                    breakpoints={{
-                                        991: {
-                                            slidesPerView: 4,
-                                        },
-                                    }}
+
                                     loop
                                     autoplay={{
                                         delay: 1,
                                         disableOnInteraction: false,
                                         pauseOnMouseEnter: true,
+                                    }}
+                                    breakpoints={{
+                                        0: {
+                                            slidesPerView: 1,
+                                            spaceBetween: 20,
+                                        },
+                                        600: {
+                                            slidesPerView: 2,
+                                            spaceBetween: 20,
+                                        },
+                                
+                                        991: {
+                                            slidesPerView: 4,
+                                            spaceBetween: 20,
+                                        },
                                     }}
                                     speed= {2000}
                                 >

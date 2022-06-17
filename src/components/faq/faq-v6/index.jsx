@@ -40,17 +40,17 @@ function About(props) {
 
 
     return (
-        <section class="section-faq style-4" id="faq">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="faq__main">
-                        <div class="block-text">
-                            <h2 class="heading">{dataTitle.title} </h2>
-                            <p class="fs-20">{dataTitle.desc} </p>
+        <section className="section-faq style-4" id="faq">
+        <div className="container">
+            <div className="row">
+                <div className="col-md-12">
+                    <div className="faq__main">
+                        <div className="block-text">
+                            <h2 className="heading">{dataTitle.title} </h2>
+                            <p className="fs-20">{dataTitle.desc} </p>
                         </div>
-                        <div class="faq__content">
-                            <div class="flat-tabs">
+                        <div className="faq__content">
+                            <div className="flat-tabs">
                             <Tabs >
                                 <TabList className="menu-tab">
                                     {

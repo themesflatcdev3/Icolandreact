@@ -17,7 +17,7 @@ function Documents(props) {
     )
 
     return (
-        <section className="documents style-2" id="document">
+        <section className="documents style-2 mobie-pb0" id="document">
         <div className="container">
             <div className="row">
                 <div className="col-md-12">

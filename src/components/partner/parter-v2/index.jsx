@@ -20,7 +20,7 @@ function About(props) {
     )
 
     return (
-        <section className="section-partner style-1" id="partner">
+        <section className="section-partner style-1 mobie-pb0" id="partner">
         <div className="container">
             <div className="row">
                 <div className="col-md-12">

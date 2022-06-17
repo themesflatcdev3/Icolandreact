@@ -756,3 +756,10 @@
 #scroll-top:hover {
     transform: translateY(-7%);
 }
+
+@include mobile { 
+    .footer.style-3 .footer__top .content-left p {
+        padding-right: 0;
+    }
+ 
+}

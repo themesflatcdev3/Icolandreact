@@ -22,7 +22,7 @@ function About(props) {
                     spaceBetween={30}
                     breakpoints={{
                         0: {
-                            slidesPerView: 2,
+                            slidesPerView: 1,
                             spaceBetween: 30,
                         },
                         600: {

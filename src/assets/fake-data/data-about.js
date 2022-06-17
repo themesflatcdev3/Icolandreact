@@ -56,6 +56,43 @@ const dataAbout = [
         title: 'Transformative Technologies',
         content: 'Elementum mauris in et at iaculis orci ut netus. Tellus pretium lorem nibh donec. Euismod nulla a e.',
     },
+
+    {
+        id: 10,
+        classAction: 'icon-vuesax',
+        title: 'Sercure Storage',
+        content: 'The platform helps investors to make easy to purchase and sell their tokens',
+    },
+    {
+        id: 11,
+        classAction: 'icon-startup',
+        title: 'Investment Projects',
+        content: 'The platform helps investors to make easy to purchase and sell their tokens',
+    },
+    {
+        id: 12,
+        classAction: 'icon-calendar',
+        title: 'Planing',
+        content: 'The platform helps investors to make easy to purchase and sell their tokens.',
+    },
+    {
+        id: 13,
+        classAction: 'icon-mobile',
+        title: 'Mobile App',
+        content: 'The process of taking into account the collective opinion of a group.',
+    },
+    {
+        id: 14,
+        classAction: 'icon-convert-card',
+        title: 'Exchange Storage',
+        content: 'The system pay a bonus for excillent individuals conveniently.',
+    },
+    {
+        id: 15,
+        classAction: 'icon-card',
+        title: 'Credit Card Use',
+        content: 'The platform helps investors to make easy to purchase and sell their tokens.',
+    },
 ]
 
 export default dataAbout;

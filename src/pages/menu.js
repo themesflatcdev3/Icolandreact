@@ -54,32 +54,32 @@ const menus = [
             {
                 id: 1,
                 sub: 'Token Sales',
-                links: '/about-v1'
+                links: '/dashboard-tokensales'
             },
             {
                 id: 2,
                 sub: 'Our Feature',
-                links: '/about-v2'
+                links: '/dashboard-features'
             },
             {
                 id: 3,
                 sub: 'Road Map',
-                links: '/coming-soon'
+                links: '/dashboard-roadmap'
             },
             {
                 id: 4,
                 sub: 'Our Creations',
-                links: '/community'
+                links: '/dashboard-creations'
             },
             {
                 id: 5,
                 sub: 'Our Team',
-                links: '/team-details'
+                links: '/dashboard-team'
             },
             {
                 id: 6,
                 sub: 'FaQs',
-                links: '/faq'
+                links: '/dashboard-faq'
             },
 
         ]

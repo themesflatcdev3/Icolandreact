@@ -1,7 +1,7 @@
 import React , {useState} from 'react';
 import PropTypes from 'prop-types';
 import '../styles.scss'
-import { Link } from 'react-router-dom';
+import ReactPlayer from 'react-player/youtube'
 
 About.propTypes = {
     data : PropTypes.array,
@@ -23,11 +23,13 @@ function About(props) {
             <div className="row">
                 <div className="col-xl-6 col-md-12">
                     <div className="about__video">
-                        <img src={require ('../../../assets/images/background/bg-video.jpg')} alt="ICOLand" />
                         <div className="wrap-video">
-                            <Link to="https://www.youtube.com/watch?v=i7EMACWuErA" className="popup-youtube">
+                            <ReactPlayer url='https://www.youtube.com/watch?v=i7EMACWuErA'   width="720px"
+                                height="501px"
+                                playing={false}
+                                controls={false} className="popup-youtube">
                                 <span className="icon-play"></span>
-                            </Link>
+                            </ReactPlayer>
                         </div>  
                     </div>
                 </div>

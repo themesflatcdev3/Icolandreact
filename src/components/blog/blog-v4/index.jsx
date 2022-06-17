@@ -19,7 +19,7 @@ function About(props) {
     )
 
     return (
-        <section className="topics" id="topics">
+        <section className="topics mobie-pb0" id="topics">
         <div className="container">
             <div className="row">
                 <div className="col-md-6">

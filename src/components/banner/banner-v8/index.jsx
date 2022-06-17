@@ -59,7 +59,7 @@ function Banner (props) {
     )
 
     return (
-        <section>
+        <section className='mobie-pb0'>
             <div className="banner-top style-8">
             <div className="container">
             <div className="row">
@@ -72,22 +72,22 @@ function Banner (props) {
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 col-md-12">
-                    <div class="banner-top__image">
+                <div className="col-xl-6 col-md-12">
+                    <div className="banner-top__image">
                         <img src={require ('../../../assets/images/layout/banner-5.png')} alt="ICOLand" />
                     </div>
                 </div>
             </div>
             </div>
         </div>
-        <div class="banner-top__main">
-                <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="banner-top__sale">
+        <div className="banner-top__main">
+                <div className="container">
+                        <div className="row">
+                            <div className="col-12">
+                                <div className="banner-top__sale">
                                 
-                                    <div class="countdown">
-                                        <p class="fs-17">Token sale End In!</p>
+                                    <div className="countdown">
+                                        <p className="fs-17">Token sale End In!</p>
                                         <div className="js-countdown">
                                             <div className="countdown__timer">
                                                 <div className="countdown__item">
@@ -106,29 +106,29 @@ function Banner (props) {
                                         </div>
                                     </div>
                                     
-                                        <div class="token-bar">
-                                            <div class="top">
+                                        <div className="token-bar">
+                                            <div className="top">
                                                 <h6>Raised - <span>1,450 Tokens</span></h6>
                                                 <h6>Target - <span>150,000 Tokens</span></h6>
                                             </div>
-                                            <div class="main">
-                                                <div class="progress-token">
-                                                    <p class="fs-14">60,490</p>
+                                            <div className="main">
+                                                <div className="progress-token">
+                                                    <p className="fs-14">60,490</p>
                                                 </div>
                                             </div>
 
-                                            <div class="bottom">
-                                                <p class="fs-14">Soft cap</p>
-                                                <p class="fs-14">Crowdsale</p>
-                                                <p class="fs-14">Hard cap</p>
+                                            <div className="bottom">
+                                                <p className="fs-14">Soft cap</p>
+                                                <p className="fs-14">Crowdsale</p>
+                                                <p className="fs-14">Hard cap</p>
                                             </div>
                                         </div>
 
-                                        <ul class="list-coin">
-                                            <li><span class="icon-bitcoin"></span></li>
-                                            <li><span class="icon-coinp"></span></li>
-                                            <li><span class="icon-coinp"></span></li>
-                                            <li><span class="icon-kyber-network"></span></li>
+                                        <ul className="list-coin">
+                                            <li><span className="icon-bitcoin"></span></li>
+                                            <li><span className="icon-coinp"></span></li>
+                                            <li><span className="icon-coinp"></span></li>
+                                            <li><span className="icon-kyber-network"></span></li>
                                         </ul>
                                 </div>
                             </div>

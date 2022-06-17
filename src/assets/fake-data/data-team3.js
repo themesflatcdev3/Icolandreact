@@ -6,6 +6,11 @@ import img5 from '../images/avt/team-10.jpg';
 import img6 from '../images/avt/team-11.jpg';
 import img7 from '../images/avt/team-12.jpg';
 
+import img8 from '../images/avt/team-20.jpg';
+import img9 from '../images/avt/team-21.jpg';
+import img10 from '../images/avt/team-22.jpg';
+import img11 from '../images/avt/team-23.jpg';
+
 
 const dataTeam = [
     {
@@ -195,6 +200,174 @@ const dataTeam = [
             {
                 id: 3,
                 icon: 'icon-twitter',
+                link: '#'
+            },
+            {
+                id: 4,
+                icon: 'icon-Calling',
+                link: '#'
+            },
+        ]
+    },
+    {
+        id: 8,
+        img: img8,
+        name: 'Ralph Edwards',
+        position: 'Sr. Backend Developer',
+        listsocial: [
+            {
+                id: 1,
+                icon: 'icon-LinkedIn',
+                link: '#'
+            },
+            {
+                id: 2,
+                icon: 'icon-Facebook',
+                link: '#'
+            },
+            {
+                id: 3,
+                icon: 'icon-Instagram',
+                link: '#'
+            },
+            {
+                id: 4,
+                icon: 'icon-Calling',
+                link: '#'
+            },
+        ]
+    },
+    {
+        id: 9,
+        img: img9,
+        name: 'Jason Smith',
+        position: 'Software Engineer',
+        listsocial: [
+            {
+                id: 1,
+                icon: 'icon-LinkedIn',
+                link: '#'
+            },
+            {
+                id: 2,
+                icon: 'icon-Facebook',
+                link: '#'
+            },
+            {
+                id: 3,
+                icon: 'icon-Instagram',
+                link: '#'
+            },
+            {
+                id: 4,
+                icon: 'icon-Calling',
+                link: '#'
+            },
+        ]
+    },
+    {
+        id: 10,
+        img: img10,
+        name: 'Eleanor Pena',
+        position: 'Blockchain Developer',
+        listsocial: [
+            {
+                id: 1,
+                icon: 'icon-LinkedIn',
+                link: '#'
+            },
+            {
+                id: 2,
+                icon: 'icon-Facebook',
+                link: '#'
+            },
+            {
+                id: 3,
+                icon: 'icon-Instagram',
+                link: '#'
+            },
+            {
+                id: 4,
+                icon: 'icon-Calling',
+                link: '#'
+            },
+        ]
+    },
+    {
+        id: 11,
+        img: img11,
+        name: 'Esther Howard',
+        position: 'Software Engineer',
+        listsocial: [
+            {
+                id: 1,
+                icon: 'icon-LinkedIn',
+                link: '#'
+            },
+            {
+                id: 2,
+                icon: 'icon-Facebook',
+                link: '#'
+            },
+            {
+                id: 3,
+                icon: 'icon-Instagram',
+                link: '#'
+            },
+            {
+                id: 4,
+                icon: 'icon-Calling',
+                link: '#'
+            },
+        ]
+    },
+    {
+        id: 12,
+        img: img8,
+        name: 'Ralph Edwards',
+        position: 'Sr. Backend Developer',
+        listsocial: [
+            {
+                id: 1,
+                icon: 'icon-LinkedIn',
+                link: '#'
+            },
+            {
+                id: 2,
+                icon: 'icon-Facebook',
+                link: '#'
+            },
+            {
+                id: 3,
+                icon: 'icon-Instagram',
+                link: '#'
+            },
+            {
+                id: 4,
+                icon: 'icon-Calling',
+                link: '#'
+            },
+        ]
+    },
+    {
+        id: 13,
+        img: img9,
+        name: 'Jason Smith',
+        position: 'Software Engineer',
+        listsocial: [
+            {
+                id: 1,
+                icon: 'icon-LinkedIn',
+                link: '#'
+            },
+            {
+                id: 2,
+                icon: 'icon-Facebook',
+                link: '#'
+            },
+            {
+                id: 3,
+                icon: 'icon-Instagram',
                 link: '#'
             },
             {

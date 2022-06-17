@@ -16,6 +16,8 @@ const Allodist = () => {
             subtitle : 'Join the industry leaders to discuss where the markets are heading. We accept token payments.',
         }
     )
+
+    
     const options = { plugins: { legend: false }}
     const data = {
       datasets: [{
@@ -68,7 +70,7 @@ const Allodist = () => {
                         <TabList className="menu-tab">
                             {
                                 dataTab.map(data=> (
-                                    <Tab key={data.id} ><h6>{data.title}</h6></Tab>
+                                    <Tab key={data.id} data={data}><h6>{data.title}</h6></Tab>
                                 ))
                             }
                         </TabList>
@@ -175,7 +177,7 @@ const Allodist = () => {
                                 </div>
                             </div>
                             <div className="chart-bar">
-                            <Chart options={data.options} series={data.series} type="donut" width="250" height="250" />
+                            <Pie data={data} options={options}></Pie>
                             </div>
                             <div className="list-progress right">
                                 <div className="progressbar">

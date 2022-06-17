@@ -16,7 +16,7 @@ function Feature(props) {
     )
 
     return (
-        <section className="road-map style-4" id="roadmap">
+        <section className="road-map style-4 mobie-pb0" id="roadmap">
             <img className="s1" src={require ('../../../assets/images/layout/rm-1.png')} alt="ICOLand" />
             <img className="s2" src={require ('../../../assets/images/layout/rm-2.png')} alt="ICOLand" />
             <div className="container">

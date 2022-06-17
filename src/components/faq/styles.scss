@@ -1067,3 +1067,24 @@
         }
     }
 }
+
+@include mobile { 
+    .section-faq.style-3 {
+        .accordion-item {
+            padding: 0;
+            .accordion-button {
+                padding-left: 50px;
+            }
+            .number {
+                left: 0;
+            }
+            .toggle-content {
+                padding-left: 50px;
+                padding-top: 15px;
+            }
+        }
+    }
+    .section-faq.style-1 .section-faq__main .flat-tabs .content-tab .accordion-item {
+        padding: 20px;
+    }
+}

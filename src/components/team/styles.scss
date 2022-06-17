@@ -804,8 +804,11 @@
             text-transform: none;
         }
     }
+    .swiper-team-7 {
+        padding-bottom: 53px;
+    }
     .swiper-pagination {
-        bottom: 72px;
+        bottom: 0;
         .swiper-pagination-bullet {
             width: 20px;
             height: 6px;
@@ -1288,4 +1291,18 @@
         }
     }
     
+}
+
+@include mobile {
+    .section-team.style-2 .block-text {
+        padding-top: 0;
+        margin-bottom: 40px;
+        p {
+            padding-right: 0;
+        }
+    }
+    .section-team.style-2 .team-box {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

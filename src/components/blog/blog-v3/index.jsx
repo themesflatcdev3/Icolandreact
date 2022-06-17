@@ -42,7 +42,7 @@ function About(props) {
 
                 <div className="col-md-12">
                     <div className="button-more center">
-                        <Button2 title='View more' addclassName='style-3' path='#' />
+                        <Button2 title='View more' addclass='style-3' path='#' />
                     </div>
                 </div>
 

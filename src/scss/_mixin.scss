@@ -35,6 +35,11 @@
     width: $width;
     height: $height;
 }
+@mixin mobileapp {
+    @media only screen and (max-width: $mobile-app) {
+        @content;
+    }
+}
 
 @mixin mobile {
     @media only screen and (max-width: $mobile-width) {

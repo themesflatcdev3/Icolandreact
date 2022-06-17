@@ -21,7 +21,7 @@ function Team(props) {
     )
 
     return (
-        <section className="section-team style-2" id="team">
+        <section className="section-team style-2 mobie-pb0" id="team">
         <div className="container">
             <div className="row">
                 <div className="col-xl-5 col-md-12">

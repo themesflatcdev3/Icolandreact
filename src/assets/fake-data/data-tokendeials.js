@@ -61,6 +61,38 @@ const dataTokendetails = [
         title: 'Acceptable Currency',
         desc: 'BTC, ETH, LTC',
     },
+
+    {
+        id: 13,
+        classAction: 'active',
+        title: 'Start',
+        desc: 'Aug 8, 2021 (9:00AM GMT)',
+    },
+    {
+        id: 14,
+        title: 'End',
+        desc: 'Feb 10, 2022 (9:00AM GMT)',
+    },
+    {
+        id: 15,
+        title: 'Acceptable Curencies',
+        desc: 'ETH, BTC, LTC',
+    },
+    {
+        id: 16,
+        title: 'Number Of Tokens For Sale',
+        desc: '1.000.000 Tokens',
+    },
+    {
+        id: 17,
+        title: 'Tokens Exchange Rate',
+        desc: '1 ETH = 650 ICC, 1 BTC = 1940 ICC',
+    },
+    {
+        id: 18,
+        title: 'Minimal Transaction',
+        desc: '10 Tokens / Transaction',
+    },
 ]
 
 export default dataTokendetails;

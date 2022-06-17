@@ -30,10 +30,10 @@ function About(props) {
                         {/* <img src={require ('../../../assets/images/background/ab-video.jpg')} alt="ICOLand" /> */}
 
                         <ReactPlayer url='https://www.youtube.com/watch?v=i7EMACWuErA'   width="600px"
-    height="419px"
-    playing={false}
-    controls={false} className="popup-youtube">
-                        <span className="icon-play"></span>
+                            height="419px"
+                            playing={false}
+                            controls={false} className="popup-youtube">
+                            <span className="icon-play"></span>
                         </ReactPlayer>
                         </div>  
                     </div>
